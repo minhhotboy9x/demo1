@@ -104,6 +104,7 @@ public class Controller implements Initializable{
     }
 
     public void resetGame(ActionEvent event) throws IOException {
+        mediaPlayer.stop();
         FXMLLoader loader = new FXMLLoader(getClass().getResource("sample.fxml"));
         Parent root = loader.load();
         Stage stage = (Stage) (((Node)event.getSource()).getScene()).getWindow();
