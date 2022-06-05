@@ -108,7 +108,7 @@ public class Controller implements Initializable{
         FXMLLoader loader = new FXMLLoader(getClass().getResource("sample.fxml"));
         Parent root = loader.load();
         Stage stage = (Stage) (((Node)event.getSource()).getScene()).getWindow();
-        Scene scene = new Scene(root, 800, 600);
+        Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
