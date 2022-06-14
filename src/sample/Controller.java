@@ -74,6 +74,7 @@ public class Controller implements Initializable{
         mediaPlayer.setVolume(0.20);
         mediaPlayer.play();
         mediaPlayer.setCycleCount(mediaPlayer.INDEFINITE);
+
     }
 
     public void lockShip(ActionEvent event){
