@@ -71,12 +71,9 @@ public class Controller implements Initializable{
         media = new Media(file.toURI().toString());
         mediaPlayer = new MediaPlayer(media);
         mediaView.setMediaPlayer(mediaPlayer);
-        mediaPlayer.setVolume(0.15);
+        mediaPlayer.setVolume(0.20);
         mediaPlayer.play();
-        mediaPlayer.setOnEndOfMedia(() -> {
-            mediaPlayer.stop();
-            mediaPlayer.play();
-        });
+        mediaPlayer.setCycleCount(mediaPlayer.INDEFINITE);
     }
 
     public void lockShip(ActionEvent event){
